@@ -1,0 +1,28 @@
+{
+  "name": "d.me.note.com",
+  "version": "1.0.0",
+  "description": "me.note.com",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boylufeng20141007/me.note.com.git"
+  },
+  "keywords": [
+    "me.note.com"
+  ],
+  "author": "lux.lu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boylufeng20141007/me.note.com/issues"
+  },
+  "homepage": "https://github.com/boylufeng20141007/me.note.com#readme",
+  "dependencies": {
+    "koa": "^1.2.0"
+  }
+}
