@@ -1,0 +1,29 @@
+{
+	"restartable": "rs",
+	"ignore": [
+		".git",
+		"node_modules/**/node_modules",
+		"node_modules",
+		"test",
+		".gitignore",
+		"README.md"
+	],
+	"verbose": true,
+	"execMap": {
+		"": "node",
+		"js": "node --harmony"
+	},
+	"events": {
+		"restart": "server is restarting... due to"
+	},
+	"watch": [
+		"app.js",
+		"src"
+	],
+	"env": {
+		"NODE_ENV": "development",
+		"PORT": "8899"
+	},
+	"ext": "js json html",
+	"legacy-watch": false
+}

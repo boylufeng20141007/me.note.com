@@ -7,7 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "dev"
+    "dev": "nodemon app.js",
+    "pm2_cmd": "pm2 start app.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,10 @@
   },
   "homepage": "https://github.com/boylufeng20141007/me.note.com#readme",
   "dependencies": {
-    "koa": "^1.2.0"
+    "co-views": "^2.1.0",
+    "ejs": "^2.4.1",
+    "jade": "^1.11.0",
+    "koa": "^1.2.0",
+    "koa-router": "^5.4.0"
   }
 }
