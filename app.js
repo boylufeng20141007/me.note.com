@@ -9,7 +9,8 @@ var port = 8899;
 
 var app = require('koa')(),
 	router = require('koa-router')(),
-	views = require('co-views');
+	views = require('co-views'),
+	serve = require('koa-static');
 
 /*app.use(function *() {
 	this.body = 'hello world';
@@ -17,7 +18,8 @@ var app = require('koa')(),
 
 app
 	.use(router.routes())
-	.use(router.allowedMethods());
+	.use(router.allowedMethods())
+	.use(serve(__dirname + '/lib'));
 //app.use(router(app));
 
 router.get('/test', function *(){
@@ -25,18 +27,19 @@ router.get('/test', function *(){
 	//this.end();
 	this.body = 'abc';
 });
-router.get('/user/:id', function *(){
+router.get('/', function *(){
 	//this.body = this.params.id;
-	this.body = yield render('index', {
+	this.body = yield render('index/index', {
 		user: {
 			name: 'lux',
 			age: this.params.id
-		}
+		},
+		title: '日记一事'
 	});
 });
 
 // global middlewares
-var render = views('./views', {
+var render = views('./views/components', {
 	map: {
 		html: 'ejs'
 	}
