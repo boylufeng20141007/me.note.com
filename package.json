@@ -31,5 +31,9 @@
     "koa-router": "^5.4.0",
     "koa-static": "^2.0.0",
     "normalize.css": "^3.0.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1"
   }
 }

@@ -1,10 +1,11 @@
-"use strict";
 /**
  * 项目启动文件 
  * @authors lux.lu (lf790960502@163.com)
  * @date    2016-03-09 23:23:42
  * @version 1.0 
  */
+"use strict";
+
 var port = 8899;
 
 var app = require('koa')(),
