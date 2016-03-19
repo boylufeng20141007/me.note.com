@@ -14,4 +14,4 @@
 	}).on('task_stop',function(){
 	    console.log('stop');
 	});
->也有现成的插件[gulp-plumber](https://www.npmjs.com/package/gulp-plumber)来监听任务异常。
+也有现成的插件[gulp-plumber](https://www.npmjs.com/package/gulp-plumber)来监听任务异常。
